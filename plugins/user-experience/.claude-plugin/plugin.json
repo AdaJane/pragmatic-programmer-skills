@@ -1,0 +1,11 @@
+{
+  "name": "user-experience",
+  "description": "Retention, referral, outbound sales and SEO skills — distilled and rewritten from mayurrathi/awesome-agent-skills.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Ada Jane Anderson",
+    "email": "ada@somepanic.com"
+  },
+  "license": "MIT",
+  "keywords": ["growth", "retention", "referral", "sales", "outreach", "seo"]
+}

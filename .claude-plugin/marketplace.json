@@ -5,32 +5,27 @@
     "email": "ada@somepanic.com"
   },
   "metadata": {
-    "description": "Skills to make a pragmatic programmer.",
-    "version": "0.3.0"
+    "description": "Skill buckets for the pragmatic programmer: software craft, cryptographic security, user experience. Add once, install the buckets you want.",
+    "version": "0.4.0"
   },
   "plugins": [
     {
       "name": "pragmatic-programmer",
-      "source": "./",
-      "description": "Small sharp skills distilled from Hunt & Thomas's Pragmatic Programmer, Eric S. Raymond's Art of Unix Programming, and Nadim Kobeissi's Post-Quantum Migration Playbook — composable workflows for decision-making, debugging, hygiene, defensive design, Unix-style composition, and post-quantum cryptography migration.",
-      "version": "0.3.0",
-      "author": {
-        "name": "Ada Jane Anderson",
-        "email": "ada@somepanic.com"
-      },
-      "license": "MIT",
-      "keywords": [
-        "pragmatic-programmer",
-        "unix",
-        "workflows",
-        "debugging",
-        "refactoring",
-        "composition",
-        "craft",
-        "post-quantum",
-        "cryptography",
-        "migration"
-      ]
+      "source": "./plugins/pragmatic-programmer",
+      "version": "0.4.0",
+      "description": "Small sharp skills distilled from Hunt & Thomas's Pragmatic Programmer and Eric S. Raymond's Art of Unix Programming — decision-making, debugging, hygiene, defensive design, Unix-style composition."
+    },
+    {
+      "name": "security",
+      "source": "./plugins/security",
+      "version": "0.1.0",
+      "description": "Cryptographic audit and migration skills: Nadim Kobeissi's Post-Quantum Migration Playbook (pqc-*) and mpcsec.org's MPC / threshold-cryptography audit checklist. Composes with the pragmatic-programmer bucket."
+    },
+    {
+      "name": "user-experience",
+      "source": "./plugins/user-experience",
+      "version": "0.1.0",
+      "description": "Retention, referral, outbound sales and SEO skills — distilled and rewritten from mayurrathi/awesome-agent-skills."
     }
   ]
 }

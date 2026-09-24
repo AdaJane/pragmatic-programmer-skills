@@ -1,0 +1,11 @@
+{
+  "name": "security",
+  "description": "Cryptographic audit and migration skills: Nadim Kobeissi's Post-Quantum Migration Playbook (pqc-*) and mpcsec.org's MPC / threshold-cryptography audit checklist. Composes with the pragmatic-programmer bucket.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Ada Jane Anderson",
+    "email": "ada@somepanic.com"
+  },
+  "license": "MIT",
+  "keywords": ["security", "cryptography", "post-quantum", "mpc", "threshold-cryptography", "audit"]
+}

@@ -7,11 +7,17 @@ This is my attempt to give agents the lessons that have shaped my philosophy on 
 
 This is very much an experiment of a thesis with no supporting data and should be regarded as such.
 
-## Content
-So far:
- [X] - Small sharp skills distilled from Hunt & Thomas's *The Pragmatic Programmer*.
- [X] - Small sharp skills distilled from Eric S. Raymond's *The Art of Unix Programming*.
- [X] - Small sharp `pqc-*` skills distilled from Nadim Kobeissi's *Post-Quantum Migration Playbook*.
+## Buckets
+
+Skills are grouped into buckets. Add the marketplace once, then install only the buckets you want.
+
+| Bucket | Skills | Distilled from |
+|---|---|---|
+| `pragmatic-programmer` | 22 | Hunt & Thomas, *The Pragmatic Programmer*; Eric S. Raymond, *The Art of Unix Programming* |
+| `security` | 15 | Nadim Kobeissi, *Post-Quantum Migration Playbook* (`pqc-*`); [mpcsec.org](https://mpcsec.org) MPC audit checklist (`mpc-audit`) |
+| `user-experience` | 5 | Retention, referral, outbound sales and SEO skills rewritten from [mayurrathi/awesome-agent-skills](https://github.com/mayurrathi/awesome-agent-skills) |
+
+The `user-experience` upstream carries no license, so those five skills are original rewrites in this repo's style, not copies; each cites its source.
 
 Next(?):
  [ ] - Codecraft
@@ -24,8 +30,14 @@ In Claude Code:
 
 ```
 /plugin marketplace add AdaJane/programmer-skills
-/plugin install pragmatic-programmer
+/plugin install pragmatic-programmer@pragmatic-programmer
+/plugin install security@pragmatic-programmer
+/plugin install user-experience@pragmatic-programmer
 ```
+
+Or run `/plugin`, open the `pragmatic-programmer` marketplace, and pick buckets from the list.
+
+Already installed before the split? Run `/plugin marketplace update pragmatic-programmer`. The `pragmatic-programmer` plugin no longer carries the `pqc-*` and `mpc-audit` skills; install `security` to get them back.
 
 ## Recommended but Optional
 Here's what my user-space CLAUDE.md looks like at the moment:
